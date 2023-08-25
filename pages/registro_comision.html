@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro CSFT</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-superior">
+              <div class="logos">
+                <img src="../img/logo-unca.png" alt="unca">
+                <img src="../img/LogoFTCA.png" alt="tecno">
+              </div>
+      
+              <h2>Gestión de trabajos finales</h2>
+        
+              <div class="buscador">
+                <input type="search" name="buscar" placeholder="¿Qué es lo que estás buscando?">
+              </div>
+        
+            </div>
+        
+            <div class="container-menu">
+              <div class="menu">
+                  <nav>
+                  <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Registrar</a>
+                    <ul>
+                      <li><a href="#">Integrantes de la CSTF</a></li>
+                      <li><a href="#">Integrantes del tribunal evaluador</a></li>
+                      <li><a href="#">Alumnos</a></li>
+                      <li><a href="#">Proyecto de trabajo final</a></li>
+                      <li><a href="#">Movimientos y estados de un PTF</a></li>
+                      <li><a href="#">Informes y evaluciones</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Evaluación formal</a></li>
+                  </ul>
+                  </nav>
+                </div>
+             
+            </div>
+        
+        </header>
+
+        <h2>Registro Integrante de la CSTF</h2>
+
+        <form action="#" method="post">
+            <h3>Datos del Integrante</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name= "nombre" placeholder="Ingrese Nombre Completo" required>
+            <br>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido Completo" required>
+            <br>
+            <br>
+            <label for="cuil">CUIL:</label>
+            <input type="number" id="cuil" name="cuil" placeholder="Ingrese Nro Cuil sin puntos" required>
+            <br>
+            <br>
+            <label for="fecha_integracion">Fecha de Integracion:</label>
+            <input type="date" id="fecha_integracion" name="fecha_integracion" required>
+        </form>
+
+        <footer> <p> &copy; Facultad de Tecnologia y Ciencias Aplicadas</p></footer>
+    </body>
+</html>
