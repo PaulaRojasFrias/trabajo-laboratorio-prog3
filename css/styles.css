@@ -168,6 +168,10 @@ main{
     transition: all 300ms ease;
 }
 
+.opcion a{
+    color: black;
+} 
+
 .opcion a:hover{
     color: white;
 }
