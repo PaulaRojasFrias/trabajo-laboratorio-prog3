@@ -288,8 +288,6 @@ footer {
 main{
     padding: 40px 20px;
     margin-top: 200px;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Formulario */
@@ -334,6 +332,18 @@ form input:focus{
     border: 3px solid #6495ED;
 }
 
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+
 .boton:hover {
     background-color: #0056b3;
 }
@@ -348,15 +358,4 @@ form input:focus{
     box-shadow: 0 0 20px rgba(220, 255, 255, 0.4);
     cursor: pointer;
     margin-top: 20px;
-}
-
-
-@media (min-width: 1024px) {
-    .informe h3{
-       font-size: 1.2rem;
-    }
-
-    .informe p{
-        font-size: 1.2rem;
-    }
 }
