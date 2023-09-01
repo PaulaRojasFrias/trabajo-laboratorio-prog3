@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles_registro_comision.css">
         <title>Registro CSFT</title>
     </head>
 
@@ -48,26 +49,29 @@
         
         </header>
 
-        <h2>Registro Integrante de la CSTF</h2>
+        <main>
+          <h2>Registro Integrante de la CSTF</h2>
 
-        <form action="#" method="post">
-            <h3>Datos del Integrante</h3>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name= "nombre" placeholder="Ingrese Nombre Completo" required>
-            <br>
-            <br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido Completo" required>
-            <br>
-            <br>
-            <label for="cuil">CUIL:</label>
-            <input type="number" id="cuil" name="cuil" placeholder="Ingrese Nro Cuil sin puntos" required>
-            <br>
-            <br>
-            <label for="fecha_integracion">Fecha de Integracion:</label>
-            <input type="date" id="fecha_integracion" name="fecha_integracion" required>
-        </form>
+          <form action="#" method="post">
+              <h3>Datos del Integrante</h3>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name= "nombre" placeholder="Ingrese Nombre Completo" required>
+              <br>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido Completo" required>
+              <br>
+              <label for="cuil">CUIL:</label>
+              <input type="number" id="cuil" name="cuil" placeholder="Ingrese Nro Cuil sin puntos" required>
+              <br>
+              <label for="fecha_integracion">Fecha de Integracion:</label>
+              <input type="date" id="fecha_integracion" name="fecha_integracion" required>
+              <input class = "boton" type="submit" name="guardar" value="Guardar">
+          </form>
+        </main>
 
-        <footer> <p> &copy; Facultad de Tecnologia y Ciencias Aplicadas</p></footer>
+        <footer> 
+          <h3>&copy Gestión de trabajos finales</h3> 
+          <h4>UNCa | Facultad de Tecnologia y Ciencias Aplicadas</h4>
+        </footer>
     </body>
 </html>
