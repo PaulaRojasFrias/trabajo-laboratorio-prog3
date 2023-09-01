@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Permanent+Marker&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/42b0819548.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/styles.css">
     <title>Estadisticas | Gestión de trabajos finales</title>
 </head>
@@ -30,17 +31,23 @@
 
     <div class="container-menu">
       <div class="menu">
+
+        <input type="checkbox" name="" id="check__menu">
+        <label id="#label__Check" for="check__menu">
+          <i class="fa-solid fa-bars icon__menu"></i>
+        </label>
+
           <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="#">Registrar</a>
             <ul>
-              <li><a href="#">Integrantes de la CSTF</a></li>
-              <li><a href="#">Integrantes del tribunal evaluador</a></li>
-              <li><a href="#">Alumnos</a></li>
+              <li><a href="./registro_comision.html">Integrantes de la CSTF</a></li>
+              <li><a href="./registro_tribuanl_evaluador.html">Integrantes del tribunal evaluador</a></li>
+              <li><a href="./inscripcionalumno.html">Alumnos</a></li>
               <li><a href="#">Proyecto de trabajo final</a></li>
               <li><a href="#">Movimientos y estados de un PTF</a></li>
-              <li><a href="#">Informes y evaluciones</a></li>
+              <li><a href="./estadisticas.html">Informes y evaluciones</a></li>
             </ul>
             </li>
             <li><a href="#">Informes</a></li>
@@ -54,18 +61,21 @@
   </header> 
 
   <main>
-    <h1>Estadisticas</h1>
-    <section>
-      <h3>Informe 1</h3>
-     <p>Listado de los PTF según estado y rangos de fecha</p>
-      <button>Generar</button>
-    </section>
-
-
-    <section>
-      <h3>Informe 2</h3>
-     <p>Listado de tribunales Evaluadores y sus PTF asignados por estados y por rangos de fecha</p>
-     <button>Generar</button>
+    <div class="container-estadisticas">
+      <h1>Estadisticas</h1>
+      <section class="informe-1">
+        <h3>Informe 1</h3>
+       <p>Listado de los PTF según estado y rangos de fecha</p>
+        <button>Generar</button>
+      </section>
+  
+  
+      <section>
+        <h3>Informe 2</h3>
+       <p>Listado de tribunales Evaluadores y sus PTF asignados por estados y por rangos de fecha</p>
+       <button>Generar</button>
+    </div>
+   
   </main>
 
   <footer> 

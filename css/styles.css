@@ -287,7 +287,7 @@ footer {
 
 
 /*----------------INDEX----------------------*/
-main {
+main{
 
     padding: 40px 20px;
     margin-top: 155px;
@@ -301,6 +301,7 @@ main {
     width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 }
 .opcion {
@@ -350,6 +351,7 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        
     }
 
     .opcion {
@@ -376,4 +378,29 @@ main {
     .opcion-3 {
         background-color: #bad6eb;
     }
+}
+
+
+
+/*----------------ESTADISTICAS--------------------*/
+
+
+/*Mobile*/
+
+.container-estadisticas{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.container-estadisticas h1{
+   padding-bottom: 30px;
+   font-size: 1.4rem;
+   text-align: center;
+   color:  #081f5c;
+}
+
+.informe-1{
+    height: 50%;
+    
 }
