@@ -262,7 +262,6 @@ nav ul li ul li a:hover {
     }
 }
 
-
 /*----------------FOOTER----------------------*/
 
 footer {
@@ -284,6 +283,8 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+
 
 main{
     padding: 40px 20px;
