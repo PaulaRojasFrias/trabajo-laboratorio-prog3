@@ -31,7 +31,20 @@ persona1.obtDetalles();
 class Estudiante extends Persona{
     constructor(apellido, nombre, genero,curso,grupo){
         super(apellido, nombre, genero);
+        this.curso=curso;
+        this.grupo=grupo;
     }
 
-    registrar();
+    registrar(){
+        console.log(this.curso);
+    }
 }  
+
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let inputs = e.target.children;
+
+});
