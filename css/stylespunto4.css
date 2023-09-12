@@ -1,0 +1,62 @@
+body { 
+    /* color verde muy claro en el fondo haciendo contraste con distintos colores verdes en el resto del codigo,
+    display flex, flex direction y justify content configurados tal que tanto el contenedor de la izquiera(form) y el de la derecha (tabla)
+    queden alineados */
+    background-color: rgb(207, 249, 235);
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .navbar {
+    /* Barra de navegacion con logo de la facultad */
+    background-color: #005555;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-title {
+      flex: 1;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0 20px;
+  }
+
+  .logo-unca{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+  }
+
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #005555;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.celda{
+  margin:30px;
+}
