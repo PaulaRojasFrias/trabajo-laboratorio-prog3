@@ -40,11 +40,3 @@ class Estudiante extends Persona{
     }
 }  
 
-let formulario = document.getElementById("formulario");
-
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let inputs = e.target.children;
-
-});

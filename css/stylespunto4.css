@@ -53,10 +53,21 @@ body {
 
 .contenedor{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  border: 2px solid black;
 }
+  
+
 
 .celda{
-  margin:30px;
+  padding:10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celda-label{
+  background-color:  #7096d1;
+  color:  #01005e;;
 }

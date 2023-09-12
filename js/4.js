@@ -79,8 +79,27 @@ profesores.forEach((item) => {
     celda4.innerHTML = `<h4>${item.comision}</h4>`;
     celda4.classList.add("celda");
 
+    const celda5 = document.createElement("div");
+    celda5.classList.add("celda");
+    let button = document.createElement("button");
+    button.textContent = "Eliminar";
+    celda5.appendChild(button);
+
+    button.onclick = function () {
+        contenedor.removeChild(celda1);
+        contenedor.removeChild(celda2);
+        contenedor.removeChild(celda3);
+        contenedor.removeChild(celda4);
+        contenedor.removeChild(celda5);
+    };
+   
     contenedor.appendChild(celda1);
     contenedor.appendChild(celda2);
     contenedor.appendChild(celda3);
     contenedor.appendChild(celda4);
+    contenedor.appendChild(celda5);
 });
+
+
+
+
