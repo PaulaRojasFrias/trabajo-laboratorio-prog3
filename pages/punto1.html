@@ -10,20 +10,26 @@
         <h2>Registro PTF</h2>
         <form id="formulario_ptf" action="#" method="post">
             <h3>Datos del PTF</h3>
-            <label for="fecha_registro_ptf">Fecha de Registro:</label>
-            <input type="date" id="fecha_registro_ptf" name="fecha_registro_ptf" required>
+            <label for="fecha">Fecha de Registro:</label>
+            <input type="date" id="fecha" name="fecha" required>
             <input class = "boton" type="submit" name="guardar" value="Guardar">
         </form>
 
         <h2>Estado del PTF</h2>
-        <input id="cb_observado" name= "estados" type="radio" value="observado">
+        <input id="cb_observado" name= "estados" type="radio" value="observado" onclick="esconderDescripcion(1)">
         <label for="cp_observado">Observado</label>
         <br>
-        <input id="cb_aceptado" name= "estados" type="radio" value="aceptado">
+        <input id="cb_aceptado" name= "estados" type="radio" value="aceptado" checked onclick="esconderDescripcion(2)">
         <label for="cp_observado">Aceptado</label>
         <br>
-        <input id="cb_rechazado" name= "estados" type="radio" value="rechazado">
+        <input id="cb_rechazado" name= "estados" type="radio" value="rechazado" onclick="esconderDescripcion(2)">
         <label for="cp_observado">Rechazado</label>
+        <br>
+        <br>
+        <input type="text" id="descripcion_observacion" placeholder="Ingrese una observacion"  style="display: none;">
+        <br>
+        <br>
+        <input type="button" id="boton" value="Aceptar">
     </main>
     <script src="../js/1.js"></script>
 </body>
