@@ -10,7 +10,7 @@ formulario1.addEventListener("submit", function(e){
    let fechaForm = new Date(inputFecha);
    
    if(fechaForm > fechaActual){
-      alert('Error. La fecha es posterior a la actual')
+      alert('Error. La fecha es posterior a la actual');
    }
 });
 
