@@ -3,28 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42b0819548.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/stylespunto1.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="header-superior">
+          <div class="logos">
+            <img src="../img/logo-unca.png" alt="unca">
+            <img src="../img/LogoFTCA.png" alt="tecno">
+          </div>
+          
+          <h2>Gestión de trabajos finales</h2>
+    
+          <div class="buscador">
+            <input type="search" name="buscador" placeholder="¿Qué es lo que estás buscando?">
+          </div>
+    
+        </div>
+    
+        <div class="container-menu">
+          <div class="menu">
+    
+            <input type="checkbox" name="" id="check__menu">
+            <label id="#label__Check" for="check__menu">
+              <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+    
+              <nav>
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Registrar</a>
+                <ul>
+                  <li><a href="./registro_comision.html">Integrantes de la CSTF</a></li>
+                  <li><a href="./registro_tribuanl_evaluador.html">Integrantes del tribunal evaluador</a></li>
+                  <li><a href="./inscripcionalumno.html">Alumnos</a></li>
+                  <li><a href="#">Proyecto de trabajo final</a></li>
+                  <li><a href="#">Movimientos y estados de un PTF</a></li>
+                  <li><a href="./estadisticas.html">Informes y evaluciones</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Informes</a></li>
+                <li><a href="#">Evaluación formal</a></li>
+              </ul>
+              </nav>
+          </div>
+         
+        </div>
+    
+    </header> 
+    
     <main>
         <h2>Registro PTF</h2>
         <form id="formulario_ptf" action="#" method="post">
             <h3>Datos del PTF</h3>
-            <label for="fecha_registro_ptf">Fecha de Registro:</label>
-            <input type="date" id="fecha_registro_ptf" name="fecha_registro_ptf" required>
+            <label for="fecha">Fecha de Registro:</label>
+            <input type="date" id="fecha" name="fecha" required>
             <input class = "boton" type="submit" name="guardar" value="Guardar">
         </form>
 
         <h2>Estado del PTF</h2>
-        <input id="cb_observado" name= "estados" type="radio" value="observado">
-        <label for="cp_observado">Observado</label>
-        <br>
-        <input id="cb_aceptado" name= "estados" type="radio" value="aceptado">
-        <label for="cp_observado">Aceptado</label>
-        <br>
-        <input id="cb_rechazado" name= "estados" type="radio" value="rechazado">
-        <label for="cp_observado">Rechazado</label>
+        <div id="caja">
+          <p>Seleccione un Estado: </p>
+          <br>
+          <label><input id="cb_observado" name= "estados" type="radio" value="observado" onclick="esconderDescripcion(1)">Observado</label>
+          <br>
+          <label><input id="cb_aceptado" name= "estados" type="radio" value="aceptado" checked onclick="esconderDescripcion(2)">Aceptado</label>
+          
+          <br>
+          <label><input id="cb_rechazado" name= "estados" type="radio" value="rechazado" onclick="esconderDescripcion(2)">Rechazado</label>
+          
+          <br>
+          <br>
+          <input type="text" id="descripcion_observacion" placeholder="Ingrese una observacion"  style="display: none;">
+          <br>
+          <br>
+          <input type="button" id="boton" class="boton" value="Aceptar">
+        </div>
     </main>
+
+    <footer> 
+        <h3>&copy Gestión de trabajos finales</h3> 
+        <h4>UNCa | Facultad de Tecnologia y Ciencias Aplicadas</h4>
+    </footer>
+    
     <script src="../js/1.js"></script>
 </body>
 </html> 
