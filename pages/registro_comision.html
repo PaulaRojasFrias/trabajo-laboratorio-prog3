@@ -13,7 +13,8 @@
     </head>
 
     <body>
-        <header>
+
+      <header>
             <div class="header-superior">
               <div class="logos">
                 <img src="../img/logo-unca.png" alt="unca">
@@ -58,32 +59,52 @@
             </div>
         
         
-        </header>
+      </header>
 
-        <main>
+      <main>
           <h2>Registro Integrante de la CSTF</h2>
 
           <form id="formCstf" action="#" method="post">
               <h3>Datos del Integrante</h3>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name= "nombre" placeholder="Ingrese Nombre Completo" required>
+              <div id="grupo__nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name= "nombre" placeholder="Ingrese Nombre Completo" required>
+                <p class="formulario__input-error">El nombre tiene que contener solo letras.</p>
+              </div>
               <br>
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido Completo" required>
-              <br>
-              <label for="cuil">CUIL:</label>
-              <input type="number" id="cuil" name="cuil" placeholder="Ingrese Nro Cuil sin puntos" required>
-              <br>
-              <label for="fecha_integracion">Fecha de Integracion:</label>
-              <input type="date" id="fecha_integracion" name="fecha_integracion" required>
-              <input class = "boton" type="submit" name="guardar" value="Guardar">
-          </form>
-        </main>
 
-        <footer> 
+              <div id="grupo__apellido">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido Completo" required>
+                <p class="formulario__input-error">El apellido tiene que contener solo letras.</p>
+              </div>
+              <br>
+
+              <div id="grupo__cuil">
+                <label for="cuil">CUIL:</label>
+                <input type="number" id="cuil" name="cuil" placeholder="Ingrese Nro Cuil sin puntos" required>
+                <p class="formulario__input-error">El CUIL tiene que ser de 11 dígitos y solo puede contener numeros.</p>
+              </div>
+              <br>
+
+              <div id="grupo__fecha">
+                <label for="fecha_integracion">Fecha de Integracion:</label>
+                <input type="date" id="fecha_integracion" name="fecha_integracion" value="2006-12-19" required>
+                <p class="formulario__input-error">La fecha de integracion no puede ser posterior a la fecha actual.</p>
+              </div>
+              <br>
+
+              <p class="formulario__mensaje" id="formulario__mensaje" ><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+              <input class = "boton" type="submit" name="guardar" value="Guardar">
+              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          </form>
+      </main>
+
+      <footer> 
           <h3>&copy Gestión de trabajos finales</h3> 
           <h4>UNCa | Facultad de Tecnologia y Ciencias Aplicadas</h4>
-        </footer>
-        <script src="../js/registro_comision.js"></script>
+      </footer>
+
+      <script src="../js/registro_comision.js"></script>
     </body>
 </html>
