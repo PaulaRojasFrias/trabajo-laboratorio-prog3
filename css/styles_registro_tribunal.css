@@ -215,7 +215,6 @@ nav ul li ul li a:hover {
     nav>ul {
         flex-direction: column;
         background-color: #01005e;
-        ;
         position: fixed;
         left: 0;
         top: 158px;
@@ -286,9 +285,105 @@ footer {
 }
 
 
+/*----------------INDEX----------------------*/
+main{
+
+    padding: 40px 20px;
+    margin-top: 155px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    background: grey;
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.opcion {
+    background-color: blue;
+    border: 3px solid white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+    height: 100%;
+}
+
+.opcion a {
+    color: #081f5c;
+}
+
+.opcion a:hover {
+    color: white;
+}
+
+.opcion-a{
+    background-color: #7096d1;
+}
+
+.opcion-b{
+    background-color: #d0e3ff;
+}
+
+.opcion-c {
+    background-color: #bad6eb;
+}
+
+@media (min-width: 1024px) {
+    main{
+        margin-top: 200px;
+    }
+
+    .contenedor {
+        background: grey;
+        height: 90vh;
+        width: 60vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        
+    }
+
+    .opcion {
+        background-color: blue;
+        /*border: 2px solid black;*/
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 300ms ease;
+    }
+
+    .opcion-1 {
+        background-color: #7096d1;
+    }
+
+    .opcion-2 {
+        background-color: #d0e3ff;
+    }
+
+    .opcion-3 {
+        background-color: #bad6eb;
+    }
+}
+
+
 main{
     padding: 40px 20px;
-    margin-top: 200px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Formulario */
@@ -319,7 +414,8 @@ form label {
 
 form input[type="text"],
 form input[type="number"],
-form input[type="date"] {
+form input[type="date"],
+form input[type="file"]  {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -360,3 +456,4 @@ legend {
     cursor: pointer;
     margin-top: 20px;
 }
+
