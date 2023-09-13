@@ -18,13 +18,11 @@ class Persona{
     }
 
     obtDetalles(){
-        console.log(this.apellido);
-        console.log(this.nombre);
-        console.log(this.genero);
+        console.log(this.apellido+" "+this.nombre+" Genero:"+this.genero);
     }
 }
 
-const persona1= new Persona( "dias", "juan", "M");
+const persona1= new Persona( "diaz", "juan", "M");
 
 persona1.obtDetalles();
 
@@ -40,3 +38,25 @@ class Estudiante extends Persona{
     }
 }  
 
+const estudiante1= new Estudiante( "Marchetti", "Valentino", "M","2","Informatica");
+
+estudiante1.registrar();
+
+
+
+class Profesor extends Persona{
+    constructor(apellido, nombre, genero,asignatura,comision){
+        super(apellido, nombre, genero);
+        this.asignatura=asignatura;
+        this.comision=comision;
+    }
+
+    asignar(){
+        console.log(this.asignatura);
+    }
+}  
+
+
+const profesor1= new Profesor( "Filippin", "Marisa", "F","Base de datos","Informatica");
+
+profesor1.asignar();
