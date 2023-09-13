@@ -1,15 +1,3 @@
-// function validarFecha(fecha) {
-//     var fechaActual = new Date();
-//     var fechaIngresada = new Date(fecha);
-    
-//     if (fechaIngresada > fechaActual) {
-//     return false; // La fecha es posterior a la actual
-//     }
-
-// }
-
-// validarFecha("5 de julio");
-
 class Persona{
     constructor(apellido, nombre, genero){
         this.apellido= apellido;
