@@ -6,7 +6,7 @@ class Persona{
     }
 
     obtDetalles(){
-        console.log(this.apellido+" "+this.nombre+" Genero:"+this.genero);
+        console.log(this.apellido+" "+this.nombre+" Genero: " +this.genero);
     }
 }
 
