@@ -18,7 +18,7 @@ else:
 # Además, se debe permitir el ingreso de información para varios usuarios. 
 # Finalmente, se requiere mostrar la información ingresada por cada usuario en formato clave-valor.
 usuarios = []
-condicion = "s";
+condicion = "s"
 while condicion == "s":
     print("\nIngrese la informacion del usuario:")
     nombre = input("\nIngrese nombre del usuario:\n>> ")
